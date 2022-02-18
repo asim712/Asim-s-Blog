@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* Css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.maine{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainere{
+    /* background-color: rgba(135, 184, 154, 0.822); */
+    height: 58vh;
+    width: 70vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devPic img{
+    height: 58vh;
+    border-radius: 20px;
+    
+}
+
+.devinfo{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 55px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.names{
+    font-size: 50px;
+    
+    font-family: 'Varela Round', sans-serif;
+}
+.about{
+    font-size: 40px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.btns{
+    margin-top: 25px;
+
+}
+.btns button{
+    color: white;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: dodgerblue;
+    font-size: 16px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btns button:hover{
+    background-color: white;
+    color: black;
+}

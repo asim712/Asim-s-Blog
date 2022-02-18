@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<!-- <div class="container-fluid px-0">
+    {% load static %}
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'op1.jpg' %}"style="height: 500px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Welcome to the best Ice Cream of Lucknow</h5>
+              <p>I know you eat icecream but I know you have not eaten my icecream  so please eat my icecream</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'op2.jpg' %}" style="height: 500px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>We serve love with our Ice creams</h5>
+              <p>Asim's world famous best Ice creams</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'op4.jpg' %}"style="height: 500px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Inaugrated by jack reacher</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div> -->
+
+
+<div class="container my-4 px-5">
+    <div class="card">
+        <div class="card-header">
+       <h3> {{posts.title}}</h3>
+        </div>
+        <div class="card-body">
+            <!-- <img src="{{post.img.url}}" class="d-block w-100" alt="..."> -->
+        <blockquote class="blockquote mb-0">
+            <p>{{posts.body}}</p>
+            <footer class="blockquote-footer">{{posts.created_at}} 
+        </blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer style="
+  background: black;
+  color: white;
+  padding: 2px 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  
+">
+  <div class="center" >
+    Copyright &copy;www.asim'sblog.com. All right reserved!
+  </div>
+</footer>
+{% endblock body %}
